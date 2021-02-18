@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+	int arr[3][3],i,j,sum=0;
+	printf("print the matrix element of 2D of 3*3 matrix:\n");
+	printf("enter the elements:\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+	{
+			printf("elements[%d][%d]:",i,j);
+		scanf("%d",&arr[i][j]);
+    }
+}
+    printf("print the matrix\n");
+    for(i=0;i<3;i++)
+    {
+    printf("\n");
+    for(j=0;j<3;j++)
+    printf("%d\t",arr[i][j]);
+}
+	printf("\n");
+	for(i=0;i<3;i++)
+	{
+		sum=sum+arr[i][i];
+	}
+	printf("sum of diagonal matrix %d:",sum);
+	
+	return 0;
+}
